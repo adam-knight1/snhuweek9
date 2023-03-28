@@ -16,6 +16,8 @@ public class Application {
         use the response string to set book info. Return the generated object.
      */
     public static LibraryBook convertResponseToLibraryBook(String response){
+        LibraryBook libraryBook = new LibraryBook();
+
         return null;
     }
 

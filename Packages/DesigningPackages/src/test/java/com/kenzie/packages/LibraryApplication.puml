@@ -4,30 +4,78 @@ title Classes - Book UML Diagrams
 
 
 class LibraryBook {
+
+- isbn:String
+- subjectList:String
+
++ LibraryBook()
++libraryBook(title:string,author:string)
++ toString():String
++setBookInfo(responsestring:string)
+
 }
 
 class Book {
+
+# title:String
+# author:String
+
++ Book()
++ Book(title:String,author:String)
++ toString():String
++ setBookInfo(responseString:String)
+
 }
 
 Book <|.. LibraryBook
 
 class Logger {
+- logFile: String
+- writer:PrintWriter
+- logger:Logger
+
+- Logger()
++ getInstance(): Logger
+
++logmessage(message:string)
 }
 
 DocumentDTO *-- Logger
 
 class DocumentDTO {
+-title:string
+-isbn:list<string>
+-authorName:list<string>
+-person:list<string>
+-subject:list<string>
+
+
+
+
 }
 
 class BookRequestDTO {
+-docs:arraylist<documentdto>
+-numFound:int
+-start:int
+-numFoundExact:boolean
 }
 
 BookRequestService .. BookRequestDTO
 
 class BookRequestService {
-}
+-DEBUG:boolean
++GET_URL:String
++logger:Logger
+
++formatSearchString(requestString:string):string
++sendGetRequest(requestString:String):string
++formatResponseString(requestString:String, isbn:String,subjectList:ArrayList<String>)
 
 class Application {
++main(args:string[])
++returnBookList(response1:string,response2:string,response3:string,response4:string,response5:string):arraylist<librarybook>
++convertResponseToLibraryBook(response:string):libraryBook"
 }
 
 Application -- Logger

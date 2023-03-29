@@ -10,15 +10,17 @@ import java.util.ArrayList;
 
 public class Application {
 
+
     /*
         This method should take in a response String as a parameter.
         It should instantiate a LibraryBook object and
         use the response string to set book info. Return the generated object.
      */
     public static LibraryBook convertResponseToLibraryBook(String response){
-        LibraryBook libraryBook = new LibraryBook();
+        LibraryBook libraryBook1 = new LibraryBook();
+        libraryBook1.setBookInfo(response);
 
-        return null;
+        return libraryBook1;
     }
 
     /*
@@ -32,7 +34,31 @@ public class Application {
                                                         String response3,
                                                         String response4,
                                                         String response5) {
-        return null;
+
+            /* Claire talked about something like this in the lecture, but I thought it was referring
+            to instantiating the singleton (avoiding repetition, so I don't know if there is a better way to do this */
+        LibraryBook libraryBook1 = new LibraryBook();
+        LibraryBook libraryBook2 = new LibraryBook();
+        LibraryBook libraryBook3 = new LibraryBook();
+        LibraryBook libraryBook4 = new LibraryBook();
+        LibraryBook libraryBook5 = new LibraryBook();
+        libraryBook1.setBookInfo(response1);
+        libraryBook2.setBookInfo(response2);
+        libraryBook3.setBookInfo(response3);
+        libraryBook4.setBookInfo(response4);
+        libraryBook5.setBookInfo(response5);
+        ArrayList<LibraryBook> listOfBooks = new ArrayList<>();
+
+        //there has got to be a better way to do this... =P
+
+        listOfBooks.add(libraryBook1);
+        listOfBooks.add(libraryBook2);
+        listOfBooks.add(libraryBook3);
+        listOfBooks.add(libraryBook4);
+        listOfBooks.add(libraryBook5);
+
+
+        return listOfBooks;
     }
 
     public static void main(String[] args) {

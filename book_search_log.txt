@@ -1,0 +1,12 @@
+Process Starting
+GET Response Code :: 200
+GET Response Code :: 200
+GET Response Code :: 200
+GET Response Code :: 200
+GET Response Code :: 200
+The Hobbit|J.R.R. Tolkien|1617530034|[Middle Earth (Imaginary place), Tolkien, j, r. r. (john ronald ruel), 1892-1973, Middle earth (imaginary place)]
+Dune|Frank Herbert|9780743407304|[Dune (Television program)]
+The Nonsense Book|Mr. Myzlplk||[]
+The Cat in the Hat|Dr. Seuss|0007158440|[Nonsense verses, Children's stories, American, Readers, Juvenile fiction, Spanish literature, Poetry, Children's literature, Spanish, Latin language materials, Fiction, French language materials, Latin language, Cats, Spanish language, Bilingual, Stories in rhyme, Folklore, Fantasy, Ficción juvenil, Gatos, Pictorial works, Children's fiction, Cats, fiction, Cat in the hat (fictitious character), fiction, Juvenile Wit and humor, Children's stories, American, Fantasy fiction, Cat in the Hat (Fictitious character), Humorous stories, Large type books, Student activities, Creative activities and seat work, Brothers and sisters, Chats, Romans, nouvelles, etc. pour la jeunesse, Histoires rim?es, Juvenile literature, Hats, fiction, French language, readers]
+The Art of War|Sun Tzu|9781515436317|[Military art and science, early works to 1800, Leadership, Early works to 1800, Military art and science, Strategy, War, Philosophy, Military and warfare, Philosophy and ethics, Comics & graphic novels, nonfiction, general, Management, Philosophy, asian, Political science, history]
+Process Complete

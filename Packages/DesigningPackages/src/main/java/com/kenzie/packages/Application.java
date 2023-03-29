@@ -69,7 +69,31 @@ public class Application {
         final String BOOK_4 = "The Cat in the Hat|Dr. Seuss||";
         final String BOOK_5 = "The Art of War|Sun Tzu||";
 
+
+        //I am straight up not sure if I did this correctly, as all the tests are already passing before even trying this.
+        //Any advice is appreciated on how it could be corrected or made more efficient!
         try {
+            Logger logger = Logger.getInstance();
+            logger.logMessage("Process Starting");
+            String responseString1 = BookRequestService.sendGetRequest(BOOK_1);
+            String responseString2 = BookRequestService.sendGetRequest(BOOK_2);
+            String responseString3 = BookRequestService.sendGetRequest(BOOK_3);
+            String responseString4 = BookRequestService.sendGetRequest(BOOK_4);
+            String responseString5 = BookRequestService.sendGetRequest(BOOK_5);
+            logger.logMessage(responseString1);
+            logger.logMessage(responseString2);
+            logger.logMessage(responseString3);
+            logger.logMessage(responseString4);
+            logger.logMessage(responseString5);
+
+            returnBookList(responseString1,responseString2,responseString3,responseString4,responseString5);
+            System.out.println(responseString2);  //it works I think!
+            System.out.println(responseString1);
+            System.out.println(responseString3);
+            logger.logMessage("Process Complete");
+
+
+
             // Write code inside this try/catch block
             // 1. Instantiate Singleton Logger object to log: "Process starting"
             // 2. Repeat for all five books listed (you do not need to loop):
@@ -83,8 +107,10 @@ public class Application {
 
         }
         catch (Exception e){
+
             System.out.println("Error occurred: unable to request book info");
             System.out.println("Exception info:" + e.getMessage());
+
         }
     }
 

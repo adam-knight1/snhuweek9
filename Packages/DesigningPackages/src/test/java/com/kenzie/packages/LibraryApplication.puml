@@ -1,6 +1,6 @@
 @startuml
 
-title Classes - Book UML Diagrams
+title Classes -
 
 
 class LibraryBook {
